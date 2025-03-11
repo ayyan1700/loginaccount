@@ -1,0 +1,575 @@
+html, body {
+    width: auto;
+    height: 100%;
+    margin: 0;  
+    
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+
+
+
+align-content: center;
+    background: url(https://img.freepik.com/premium-vector/abstract-blue-background_92495-4150.jpg?w=996),linear-gradient(to top right,rgba(8, 6, 146, 0.397),rgba(0, 0, 0, 0.637),rgb(0, 0, 0));
+     background-position: center;
+     background-size: cover;
+  background-blend-mode: multiply;
+     background-repeat: no-repeat;
+     overflow: hidden;
+  }
+  
+
+.container{
+  width: 300px;
+  height: 380px;
+ box-shadow: 0px 1px 10px rgba(0, 255, 255, 0.397) ;
+ border-radius: 50px;
+ padding: 40px;
+  background: linear-gradient(to top right, rgba(194, 194, 194, 0.418) , rgba(2, 6, 31, 0.644) , rgb(0, 0, 0));
+   margin: 0 auto 0 auto ;
+ 
+ 
+}
+h1{
+ text-align: center;
+ font-size: 30px ;
+ top: 0;
+ color: white;
+}
+
+label{
+    color: white;
+    font-size: 16px;
+    
+    
+  
+}
+input{
+    margin-top: 5px;
+    padding: 6px ;
+    border-radius: 8px;
+    width: 96%;
+    margin-bottom: 12px;
+    color: white;
+    background-color: #35d0eb00;
+    border: 1px solid white;
+
+}
+
+
+
+#Male{
+ width: 10%;
+}
+#feMale{
+    width: 10%;
+   }
+   
+#date{
+    width: 40%;
+   }
+   
+
+
+
+
+
+
+
+button {
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: #5637c9;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1013ad;
+}
+
+button:active {
+    background-color: #15bed4;
+    color: black;
+}
+.box{
+  width: 55%;
+  height: 500px;
+  margin: auto;
+  display: none;
+  box-shadow: 0px 1px 10px black;
+box-shadow: 0px 1px 10px rgba(0, 255, 255, 0.397) ;
+  background: linear-gradient(to top right, rgba(194, 194, 194, 0.418) , rgba(2, 6, 31, 0.644) , rgb(0, 0, 0));
+  border-radius: 40px;
+}
+
+.link{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 35%;
+    
+}
+.name{
+    font-size: 20px;
+}
+.linking{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+
+}
+.linking>a{
+    font-size: 15px;
+    color: white;
+    position: relative;
+   z-index: 1;
+   padding: 10px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.linking>a::after{
+    content: '';
+    z-index: -1;
+   left: 0; 
+   width: 100%;
+   position: absolute;
+   transform: translateX(100%);
+   bottom: 0;
+   border: 2px solid #35cfeb;
+}
+
+.linking > a:hover::after {
+    transition: 1s;
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+/* .linking>a:hover{
+    color: #15bed4;
+} */
+.step1{
+   
+   width: 35%;
+   padding-bottom: 20px;
+   height: 300px;
+
+}
+.step2{
+ 
+    width: 50%; 
+align-content: center;
+    text-align: center;
+    height: 300px;
+ 
+   
+}
+.step2>img{
+ width: 100%;
+}
+main{
+    width: 100%;
+    height: auto ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+
+
+
+
+.bozx{
+    width: 20%;
+    height: 170px;
+    margin: auto;
+display: none;
+    padding: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 255, 255, 0.397) ;
+    background: linear-gradient(to top right, rgba(194, 194, 194, 0.418) , rgba(2, 6, 31, 0.644) , rgb(0, 0, 0));
+    border-radius: 40px;
+  }
+
+  .text{
+    font-size: 22px;
+    color: white;
+    font-family: "Tinos", serif;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
+  }
+  .firstspan{
+    font-size: 50px;
+    color: #35cfeb;
+
+    font-family: "Tinos", serif;
+    font-weight: 600;
+    }
+    .applyit{
+         width: 40%;
+        
+    }
+
+    .courses{
+         display: none;
+        width: 50%;
+        height: 90%;
+        margin: auto;
+        overflow-y: scroll;
+    }
+    .line{
+      width: auto;
+      margin: auto;
+      border: 2px solid white;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px; /* width of the vertical scrollbar */
+        height: 10px; /* height of the horizontal scrollbar */
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #1c8ebb00;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #ffffffa2;
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #ffffff;
+    }
+    
+
+ .course1{
+   width: 49%;
+   margin-top: 40px;
+   height: 200px;
+   background: url(https://media.licdn.com/dms/image/v2/C5612AQHlCs84OfP12Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1627291224983?e=2147483647&v=beta&t=iUci0SAAK7-Wv4bC4WsHLNLfk7FkjsMC2sVD03sW7aE);
+   background-size: cover;
+   border-radius: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   overflow: hidden;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+
+
+ }
+
+ .course1::after{
+    content: 'digital marketing';
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(18, 160, 185, 0.562);
+ }
+
+ .course1:hover::after{
+    transform: translateX(0%);
+    transition: 1s;
+ }
+
+ 
+ .course2::after{
+    content: 'web development';
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(18, 160, 185, 0.562);
+ }
+
+ .course2:hover::after{
+    transform: translateX(0%);
+    transition: 1s;
+ }
+ 
+ .course3::after{
+    content: 'word press';
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(18, 160, 185, 0.562);
+ }
+
+ .course3:hover::after{
+    transform: translateX(0%);
+    transition: 1s;
+ }
+ 
+ .course4::after{
+    content: 'graphic designing';
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(18, 160, 185, 0.562);
+ }
+
+ .course4:hover::after{
+    transform: translateX(0%);
+    transition: 1s;
+ }
+
+
+ .course2{
+    width: 49%;
+   margin-top: 40px;
+   height: 200px;
+   background: url(https://miro.medium.com/v2/resize:fit:4800/format:webp/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-left: 8px;
+   background-position: center;
+   border-radius: 20px;
+   overflow: hidden;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+  }
+
+
+  .course3{
+    width: 49%;
+    margin-top: 40px;
+    height: 200px;
+    background: url(https://www.ionos.co.uk/digitalguide/fileadmin/_processed_/e/b/csm_wordpress-hand-t_b9085360ff.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+ 
+ 
+  }
+  .course4{
+     width: 49%;
+    margin-top: 40px;
+    height: 200px;
+    background: url(https://digitalhub.com.pk/wp-content/uploads/2024/06/Graphic-Designing1-1024x614-1-760x424.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 8px;
+    border-radius: 20px; 
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+   }
+
+   
+   .course5{
+    width: 49%;
+    margin-top: 40px;
+    height: 200px;
+    background: url(https://vitbhopal.ac.in/wp-content/uploads/2022/04/Cyber-Security2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+ 
+ 
+  }
+  .course6{
+     width: 49%;
+    margin-top: 40px;
+    height: 200px;
+    background: url(https://media.licdn.com/dms/image/v2/D4D12AQGZEFxxX2Dzrg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1694885800616?e=2147483647&v=beta&t=2wTaSszUOVI_wbztnrnKTrtYXaWcpL5poR7OR0MWccc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 8px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+   }
+
+   
+   .course7{
+    width: 49%;
+    margin-top: 40px;
+    height: 200px;
+    background: url(https://i.tribune.com.pk/media/images/lr1697093347-0/lr1697093347-0.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+ 
+ 
+  }
+  .course8{
+     width: 49%;
+    margin-top: 40px;
+    height: 200px;
+    background: url(https://designshack.net/wp-content/uploads/photoshop-photo-effects-368x246.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 8px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+   }
+ 
+
+
+   .course5::after{
+    content: 'cyber security';
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(18, 160, 185, 0.562);
+ }
+
+ .course5:hover::after{
+    transform: translateX(0%);
+    transition: 1s;
+ }
+
+ .course6::after{
+    content: 'trading';
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(18, 160, 185, 0.562);
+ }
+
+ .course6:hover::after{
+    transform: translateX(0%);
+    transition: 1s;
+ }
+
+ .course7::after{
+    content: 'editing';
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(18, 160, 185, 0.562);
+ }
+
+ .course7:hover::after{
+    transform: translateX(0%);
+    transition: 1s;
+ }
+
+ .course8::after{
+    content: 'photoshop';
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(18, 160, 185, 0.562);
+ }
+
+ .course8:hover::after{
+    transform: translateX(0%);
+    transition: 1s;
+ }
